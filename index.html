@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Haoran Yang · 个人主页</title>
+<style>
+  :root {
+    --max-width: 760px;
+    --text: #24292f;
+    --muted: #57606a;
+    --link: #0969da;
+    --border: #d0d7de;
+    --bg: #ffffff;
+    --bg-soft: #f6f8fa;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: Georgia, "Songti SC", "SimSun", serif;
+    color: var(--text);
+    background: var(--bg);
+    line-height: 1.7;
+    padding: 0 20px 60px;
+  }
+  .wrap { max-width: var(--max-width); margin: 0 auto; }
+
+  /* 顶部导航 */
+  nav {
+    border-bottom: 1px solid var(--border);
+    padding: 14px 0;
+    margin-bottom: 36px;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 14px;
+  }
+  nav .name { font-weight: 700; margin-right: 24px; }
+  nav a { color: var(--link); text-decoration: none; margin-right: 14px; }
+  nav a:hover { text-decoration: underline; }
+
+  h1 { font-size: 28px; margin-bottom: 8px; }
+  h2 {
+    font-size: 19px;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 6px;
+    margin: 40px 0 14px;
+  }
+  p.desc { color: var(--muted); margin-bottom: 8px; }
+
+  ul { padding-left: 22px; }
+  li { margin: 6px 0; }
+  a { color: var(--link); }
+
+  /* 文件列表表格 */
+  table.files { width: 100%; border-collapse: collapse; margin-top: 10px; }
+  table.files th, table.files td {
+    text-align: left;
+    padding: 8px 10px;
+    border-bottom: 1px solid var(--border);
+    font-size: 14.5px;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+  }
+  table.files th { background: var(--bg-soft); }
+  table.files td.size, table.files td.date { color: var(--muted); white-space: nowrap; }
+  table.files a { text-decoration: none; }
+  table.files a:hover { text-decoration: underline; }
+
+  footer {
+    margin-top: 60px;
+    color: var(--muted);
+    font-size: 13px;
+    border-top: 1px solid var(--border);
+    padding-top: 16px;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <nav>
+    <span class="name">Burgundy Yang</span>
+    <a href="index.html">Home</a>
+    <a href="index.html#files">Files</a>
+    <a href="index.html#resources">Resources</a>
+  </nav>
+
+  <h1>这里是 Yang 的个人主页</h1>
+  <p class="desc">存放我的资料与文档。点击文件名即可下载。</p>
+
+  <h2 id="files">资料 · Files</h2>
+  <table class="files">
+    <tr><th>文件</th><th>说明</th><th>日期</th></tr>
+    <tr>
+      <td><a href="XMU2026-2027.pdf" download>XMU2026-2027.pdf</a></td>
+      <td class="size">——</td>
+      <td class="date">2026-09-06</td>
+    </tr>
+    <!-- 复制上面的 <tr> 块即可添加新文件 -->
+  </table>
+
+  <h2 id="resources">其他资源 · Resources</h2>
+  <ul>
+    <li><a href="https://example.com">参考链接一</a> —— 简要说明</li>
+    <li><a href="https://example.com">参考链接二</a> —— 简要说明</li>
+  </ul>
+
+  <footer>
+    Last updated: 2026-09-06 ·
+    <a href="https://github.com/BurgundyYang/BurgundyYang.github.io">GitHub 仓库</a>
+  </footer>
+
+</div>
+</body>
+</html>
